@@ -1,0 +1,17 @@
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\bin\Debug\net10.0\Infrastructure.deps.json
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\bin\Debug\net10.0\Infrastructure.dll
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\bin\Debug\net10.0\Infrastructure.pdb
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\bin\Debug\net10.0\Application.dll
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\bin\Debug\net10.0\Domain.dll
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\bin\Debug\net10.0\Application.pdb
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\bin\Debug\net10.0\Domain.pdb
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\Infrastructure.csproj.AssemblyReference.cache
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\Infrastructure.AssemblyInfoInputs.cache
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\Infrastructure.AssemblyInfo.cs
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\Infrastr.15EFFBFE.Up2Date
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\Infrastructure.dll
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\refint\Infrastructure.dll
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\Infrastructure.pdb
+D:\Rider\ProjectApi\CinemaApi\Infrastructure\obj\Debug\net10.0\ref\Infrastructure.dll

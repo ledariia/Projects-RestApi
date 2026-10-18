@@ -1,0 +1,11 @@
+D:\Rider\ProjectApi\CinemaApi\Domain\bin\Debug\net10.0\Domain.deps.json
+D:\Rider\ProjectApi\CinemaApi\Domain\bin\Debug\net10.0\Domain.dll
+D:\Rider\ProjectApi\CinemaApi\Domain\bin\Debug\net10.0\Domain.pdb
+D:\Rider\ProjectApi\CinemaApi\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider\ProjectApi\CinemaApi\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+D:\Rider\ProjectApi\CinemaApi\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+D:\Rider\ProjectApi\CinemaApi\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+D:\Rider\ProjectApi\CinemaApi\Domain\obj\Debug\net10.0\Domain.dll
+D:\Rider\ProjectApi\CinemaApi\Domain\obj\Debug\net10.0\refint\Domain.dll
+D:\Rider\ProjectApi\CinemaApi\Domain\obj\Debug\net10.0\Domain.pdb
+D:\Rider\ProjectApi\CinemaApi\Domain\obj\Debug\net10.0\ref\Domain.dll
