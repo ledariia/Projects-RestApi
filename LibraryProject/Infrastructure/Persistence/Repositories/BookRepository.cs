@@ -1,4 +1,4 @@
-﻿using Application.Interfaces;
+﻿﻿﻿using Application.Interfaces;
 using Domain;
 using LanguageExt;
 using static LanguageExt.Prelude;
@@ -48,5 +48,52 @@ public class BookRepository : IBookRepository, IBookQueries
         var bookId = new BookId(id);
         var book = await _context.Books.AsNoTracking().FirstOrDefaultAsync(b => b.Id == bookId, cancellationToken);
         return Optional(book);
+    }
+    public Task DeleteAsync(Domain.Book book, CancellationToken cancellationToken)
+    {
+        _context.Books.Remove(book);
+        return _context.SaveChangesAsync(cancellationToken);
+    }
+
+    public async Task DeleteMassiveAsync(CancellationToken cancellationToken)
+    {
+        var books= await _context.Books.Where(b=>b.PageCount>=1000000).ToListAsync(cancellationToken);
+        _context.Books.RemoveRange(books);
+        await _context.SaveChangesAsync(cancellationToken);
+    }
+    public async Task<IReadOnlyList<Book>> FilterAsync(
+        string? title,
+        string? author,
+        string? genre,
+        int? pagesCountFrom,
+        int? pagesCountTo,
+        DateTime? createdAtFrom,
+        DateTime? createdAtTo,
+        CancellationToken cancellationToken)
+    {
+        IQueryable<Book> query = _context.Books.AsNoTracking();
+
+        if (!string.IsNullOrWhiteSpace(title))
+            query = query.Where(b => EF.Functions.ILike(b.Title, $"%{title.Trim()}%"));
+
+        if (!string.IsNullOrWhiteSpace(author))
+            query = query.Where(b => EF.Functions.ILike(b.Author, $"%{author.Trim()}%"));
+
+        if (!string.IsNullOrWhiteSpace(genre))
+            query = query.Where(b => b.Genre.ToLower() == genre.Trim().ToLower());
+
+        if (pagesCountFrom.HasValue)
+            query = query.Where(b => b.PageCount >= pagesCountFrom.Value);
+
+        if (pagesCountTo.HasValue)
+            query = query.Where(b => b.PageCount <= pagesCountTo.Value);
+
+        if (createdAtFrom.HasValue)
+            query = query.Where(b => b.CreatedAt >= DateTime.SpecifyKind(createdAtFrom.Value, DateTimeKind.Utc));
+
+        if (createdAtTo.HasValue)
+            query = query.Where(b => b.CreatedAt <= DateTime.SpecifyKind(createdAtTo.Value, DateTimeKind.Utc));
+
+        return await query.ToListAsync(cancellationToken);
     }
 }

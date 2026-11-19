@@ -140,3 +140,4 @@ D:\Rider\ProjectApi\LibraryProject\Api\obj\Debug\net10.0\ref\API.dll
 D:\Rider\ProjectApi\LibraryProject\API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Rider\ProjectApi\LibraryProject\API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Rider\ProjectApi\LibraryProject\API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Rider\ProjectApi\LibraryProject\API\bin\Debug\net10.0\appsettings.Test.json

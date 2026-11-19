@@ -1,4 +1,4 @@
-﻿using Api.Contracts;
+﻿﻿﻿using Api.Contracts;
 using Api.Extensions;
 using Application.Commands.CreateBook;
 using Application.Commands.UpdateBook;
@@ -62,5 +62,31 @@ public class BooksController : ControllerBase
             Right: book => Ok(BookResponse.FromDomain(book)),
             Left: error => error.ToActionResult()
         );
+    }
+    [HttpDelete("{id:guid}")]
+    public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
+    {
+        var command = new Application.Commands.DeleteBook.DeleteBookCommand(id);
+        var result = await _sender.Send(command, cancellationToken);
+
+        return result.Match(
+            Right: _ => NoContent(),
+            Left: error => error.ToActionResult()
+        );
+    }
+    [HttpPost("filter")]
+    public async Task<IActionResult> Filter([FromBody] SearchBookDto request, CancellationToken cancellationToken)
+    {
+        var books = await _queries.FilterAsync(
+            request.Title,
+            request.Author,
+            request.Genre,
+            request.PagesCountFrom,
+            request.PagesCountTo,
+            request.CreatedAtFrom,
+            request.CreatedAtTo,
+            cancellationToken);
+
+        return Ok(books.Select(BookResponse.FromDomain));
     }
 }
