@@ -1,0 +1,16 @@
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\bin\Debug\net10.0\Tests.Data.deps.json
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\bin\Debug\net10.0\Tests.Data.dll
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\bin\Debug\net10.0\Tests.Data.pdb
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\bin\Debug\net10.0\Domain.dll
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\bin\Debug\net10.0\Domain.pdb
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.csproj.AssemblyReference.cache
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.AssemblyInfoInputs.cache
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.AssemblyInfo.cs
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.csproj.CoreCompileInputs.cache
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.sourcelink.json
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.csproj.Up2Date
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.dll
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\refint\Tests.Data.dll
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\Tests.Data.pdb
+D:\Rider\ProjectApi\LibraryProject\Tests.Data\obj\Debug\net10.0\ref\Tests.Data.dll
